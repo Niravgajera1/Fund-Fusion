@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌟 FundFusion - A Crowdfunding Platform
 
-## Getting Started
+**FundFusion** is a full-stack crowdfunding platform built with **Next.js** (Frontend) and **NestJS** (Backend). The platform enables users to create, share, and support campaigns, with integrated **Stripe** payment support for seamless transactions.
 
-First, run the development server:
+---
 
+## ✨ Features
+
+### 🛡️ Authentication & Authorization
+- Secure user authentication and role-based access.
+- Admins have elevated privileges to manage campaigns and users.
+
+### 📢 Campaign Management
+- **Users** can:
+  - Create campaigns with details and images.
+  - Share campaigns to increase reach.
+  - Like campaigns to show support.
+  - Raise funds via **Stripe** payments.
+- **Admins** can:
+  - View and manage all campaigns.
+  - Moderate user activity and content.
+
+### 💳 Payment Integration
+- Fully integrated with **Stripe** for secure and efficient transactions.
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: CSS Modules / Tailwind CSS
+- **Font Optimization**: [next/font](https://nextjs.org/docs/basic-features/font-optimization)
+
+### Backend
+- **Framework**: [NestJS](https://nestjs.com/)
+- **API**: RESTful architecture
+- **Payment Gateway**: Stripe
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/fundfusion.git
+cd fundfusion
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+# Install frontend dependencies
+cd frontend
+npm install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Install backend dependencies
+cd ../backend
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 3. Environment Setup
+Create `.env` files for both frontend and backend with the necessary configurations:
+- **Frontend**: Stripe API keys, API URLs
+- **Backend**: Database configurations, Stripe secrets
 
-## Learn More
+### 4. Run the development servers
+```bash
+# Start frontend (Next.js)
+cd frontend
+npm run dev
 
-To learn more about Next.js, take a look at the following resources:
+# Start backend (NestJS)
+cd ../backend
+npm run start:dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 5. Open in your browser 🌐
+- Frontend: [http://localhost:3000](http://localhost:3000)
+- Backend API: [http://localhost:4000](http://localhost:4000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🤖 How It Works
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Users**:
+   - Register or log in to the platform.
+   - Create campaigns with a title, description, images, and target funding.
+   - Share and promote campaigns to attract supporters.
+   - Receive funds directly via Stripe.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. **Admins**:
+   - Monitor all campaigns and user activity.
+   - Moderate content and manage users.
+
+---
+
+<!-- ## 📸 Screenshots -->
+
+<!-- ### Login Page 🔑
+![Login Page Screenshot](screenshots/login-page.png)
+
+### Campaign Creation 🎨
+![Campaign Creation Screenshot](screenshots/campaign-creation.png)
+
+### Admin Dashboard 🖥️
+![Admin Dashboard Screenshot](screenshots/admin-dashboard.png)
+
+### Campaign Page 📢
+![Campaign Page Screenshot](screenshots/campaign-page.png) -->
+
+---
+
+## 📬 Feedback & Contributions
+
+We welcome your feedback and contributions!  
+- Open an issue or submit a pull request on [GitHub](https://github.com/your-username/fundfusion).
+
+---
+
+👨‍💻 Happy Coding! 💻✨
